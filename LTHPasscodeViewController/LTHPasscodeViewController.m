@@ -511,7 +511,7 @@ static NSInteger const kMaxNumberOfAllowedFailedAttempts = 10;
 				self.navBar.translucent  = self.navigationBarTranslucent;
 			}
 			if (self.navigationTitleColor) {
-				self.navBar.titleTextAttributes = @{UITextAttributeTextColor : self.navigationTitleColor};
+				self.navBar.titleTextAttributes = @{NSForegroundColorAttributeName : self.navigationTitleColor};
 			}
 			
 			// Navigation item
@@ -546,7 +546,7 @@ static NSInteger const kMaxNumberOfAllowedFailedAttempts = 10;
 		navController.navigationBar.translucent			= self.navigationBarTranslucent;
 	}
 	if (self.navigationTitleColor) {
-		navController.navigationBar.titleTextAttributes = @{UITextAttributeTextColor : self.navigationTitleColor};
+		navController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName : self.navigationTitleColor};
 	}
 	
 	[viewController presentViewController: navController animated: YES completion: nil];
